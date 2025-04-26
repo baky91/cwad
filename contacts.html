@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>TranspoPark - Contacts</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/contacts.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/image_logo_2.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/image_logo_2.png">
+</head>
+
+<body>
+	<header>
+		<a class="logo" href="index.html"><img src="./images/image_logo_2.png" alt="logo"></a>
+		<h1>TranspoPark</h1>
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="activites.html">Activités</a></li>
+				<li class="ici"><a href="contacts.html">Contacts</a></li>
+			</ul>
+		</nav>
+	</header>
+    <main>
+		<h1>Contacts</h1>
+		<section>
+            <h2>Informations de contacts</h2>
+			<address>TranspoPark - 78000 Versailles</address>
+			<p>Telephone : 01 42 56 80 14</p>
+			<p>Adresse de contact : transpopark@contact.fr</p>	
+		</section>
+		<section class="iframe">
+            <h2>Carte</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17681.483716591094!2d2.1374259071107087!3d48.793949410497845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1732912408698!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</section>
+		<section>
+            <h2>Réserver une activité</h2>
+			<form class="reservation" method="post">
+				<div>
+					<label for="r_name">Nom</label>
+					<input id="r_name" name="nom" type="text" required placeholder="Nom"/>
+				</div>
+				<div>
+					<label for="r_firstname">Prénom</label>
+					<input id="r_firstname" name="prenom" type="text" required placeholder="Prénom"/>
+				</div>
+				<div>		
+					<label for="r_mail">Mail</label>
+					<input id="r_mail" name="mail" type="email" required placeholder="Email">
+				</div>
+				<div>
+					<label for="r_activite">Activité à reserver</label>
+					<select id="r_activite" name="activite" >
+						<option value=0>--- Sélectionnez une activité ---</option>
+						<option value=1>Voyage en dirigeable</option>
+						<option value=2>Jeux de simulations à Réalité Virtuelle</option>
+						<option value=3>Mini musée et cinéma</option>
+						<option value=4>Activité manuelle</option>
+					</select>
+				</div>
+				<div>
+					<label for="r_date_reserve">Date de la réservation</label>
+					<input id="r_date_reserve" name="date" type="date" required>
+				</div>
+				<div class="boutons">
+					<input type="submit" value="Envoyer" />
+					<input type="reset" value="Annuler" />	
+				</div>
+			</form>
+			<h2>Autres demandes</h2>
+			<form class="autresdemandes" method="post">
+				<div>
+					<label for="a_name">Nom</label>
+					<input id="a_name" name="nom" type="text" required placeholder="Nom"/>
+				</div>
+				<div>
+					<label for="a_firstname">Prénom</label>
+					<input id="a_firstname" name="prenom" type="text" required placeholder="Prénom"/>
+				</div>
+				<div>	
+					<label for="a_mail">Mail</label>
+					<input id="a_mail" name="mail" type="email" required placeholder="Email">
+				</div>
+				<div>
+					<label for="a_sujet">Sujet</label>
+					<select name="sujet" id="a_sujet">
+						<option value="0">--- Sélectionnez un sujet ---</option>
+						<option value="1">Infos Recrutement</option>
+						<option value="2">Suggestions</option>
+						<option value="3">Autres</option>
+					</select>
+				</div>
+				<div>
+					<label for="a_message">Votre message</label>
+					<textarea name="message" id="a_message" placeholder="Tapez votre message"></textarea>
+				</div>
+				<div class="boutons">
+					<input type="submit" value="Envoyer" />
+					<input type="reset" value="Annuler" />	
+				</div>
+			</form>
+		</section>
+    </main>
+    <footer>
+        <a href="https://portail.iut-orsay.fr"><img src="./images/Logo_IUT_200x45.jpg" alt="logo iut"></a>
+        <h4>Projet CWAD - Membres du projet</h4>
+        <p>Jason NOEL | Bakary BOMOU</p>
+        <p>Liens vers notre rapport au format <a href="./Rapport.odt">ODT</a> et <a href="./Rapport.pdf" target="_blank">PDF</a></p>
+    </footer>
+</body>
+</html>
+

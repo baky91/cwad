@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: "Roboto";
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: normal; 
+}
+
+/*----------------------------------*/
+
+header{
+    background:rgb(53, 52, 52);
+    padding: 1rem;
+    height: 55px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a{
+    width: 100%;
+    text-decoration: none;
+}
+
+header h1{
+    color: rgb(128, 128, 128);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    position: absolute;
+    text-align: center;
+    left: 40%;
+    right: 40%;
+}
+
+header img{
+    text-align: left;
+    width:50px;
+    height:50px
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 1%;
+}
+
+.menu a{
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    padding: 0.2rem;
+    border-radius: 5px;
+    
+}
+
+.ici a{
+    color: rgb(128, 128, 128);
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li{
+    margin: 0 0.2rem;
+}
+
+.menu a:hover{
+    background-color: rgba(255, 255, 255, 0.144);
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.479);
+}
+
+/*----------------------------------*/
+
+body{
+    background-color: rgb(31, 31, 31);
+}
+
+aside{
+    background-image: url(../images/image_fond_2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+main h1, h2{
+    font-family: 'Roboto';
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 38, 255) 1px 0 10px;
+}
+
+label{
+	font-family: 'Montserrat';
+}
+
+main h1{
+    margin-bottom: 1rem;
+}
+
+section{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    width: 75%;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;  
+}
+
+section a{
+    color: rgb(211, 211, 211);
+}
+
+h3{
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+p, h3{
+    font-family: 'Montserrat';
+}
+
+.argumentation p{
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+    text-indent: 5%;
+}
+
+.argumentation article{
+    margin-bottom: 1rem;
+}
+
+.iframe{
+    background: none;
+    border: none;
+}
+
+iframe{
+	width:500px; 
+	height:300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    background:rgb(255, 255, 255);
+    padding: 0.5rem;
+}
+
+footer p a{
+    color: blue;
+}
+
+footer img{
+    float:right;
+}
+
+/*----------------------------------*/
+
+@media screen and (max-width: 800px) {
+    header{
+        display: grid;
+        justify-content: center;
+        height: 100px;
+    }
+
+    header h1{
+        display: initial;
+        top: 20%;
+    }
+
+    iframe{
+        width: 100%;
+    }
+}
+  

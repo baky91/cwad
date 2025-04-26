@@ -1,0 +1,73 @@
+form{
+    color: rgb(0, 0, 0);
+	background: rgba(255, 255, 255, 0.7);
+	border-radius: 10px;
+    margin-left: 0;
+    text-align: left;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    backdrop-filter: blur(10px);
+}
+
+h2{
+    font-size: 1.7rem;
+}
+
+div{
+    display: grid;
+    padding-bottom: 1rem;
+}
+
+label{
+    font-weight: bold;
+}
+
+input, select{
+    height: 150%;
+}
+
+textarea{
+    height: 150px;
+    padding: 0.5rem;
+    resize: none;
+}
+
+.boutons{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boutons input {
+    background-color: rgb(211, 211, 211);
+	border: 2px solid rgb(0, 0, 0);
+    padding: 0.75rem;
+    margin: 0.5rem ;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 25%;
+}
+
+/*----------------------------------*/
+
+@media screen and (max-width: 700px) {
+    input, select{
+        width: 100%;
+    }
+
+    .boutons{
+        display: grid;
+        justify-items: center;
+    }
+
+    .boutons input{
+        width: 150%;
+        height: 50px;
+        margin-bottom: 0;
+    }
+}
